@@ -1,0 +1,2 @@
+# app-ads.txt for Real Shot
+# Paste here the app-ads.txt lines given by the LevelPlay dashboard, then upload this file again.
