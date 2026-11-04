@@ -21,6 +21,14 @@
       <p class="lead">Ride through the battlefield as the King, shoot down waves of enemies, and build towers,
         barracks and fences to protect your base. Earn XP after every battle to unlock upgrades.</p>
 
+      <div class="stores" id="stores">
+        <a class="store" id="store-play" href="https://play.google.com/store/apps/details?id=com.realshot.game">
+          <small>Get it on</small>Google Play</a>
+        <a class="store" id="store-apple" href="https://apps.apple.com/app/real-shot-not-fake/id6819035838">
+          <small>Download on the</small>App Store</a>
+      </div>
+      <p class="muted">Free to play. Real gameplay, exactly as shown.</p>
+
       <div class="buttons">
         <a class="button" href="privacy.html">Privacy Policy</a>
         <a class="button secondary" href="mailto:bornation.support@gmail.com">Contact us</a>
@@ -31,5 +39,14 @@
       &copy; 2026 Bornation &middot; <a href="privacy.html">Privacy Policy</a> &middot; <a href="terms.html">Terms of Service</a> &middot; <a href="mailto:bornation.support@gmail.com">bornation.support@gmail.com</a>
     </footer>
   </div>
+  <script>
+    // On an iPhone/iPad the App Store button comes first, on Android Google Play (the other one stays visible).
+    var ua = navigator.userAgent || "";
+    var ios = /iPhone|iPad|iPod/.test(ua) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+    if (ios) {
+      var s = document.getElementById("stores");
+      s.insertBefore(document.getElementById("store-apple"), s.firstChild);
+    }
+  </script>
 </body>
 </html>
