@@ -17,7 +17,7 @@
 
     <main class="card">
       <h1>Privacy Policy</h1>
-      <p class="muted">Last updated: November 16, 2026</p>
+      <p class="muted">Last updated: November 25, 2026</p>
 
       <p>This Privacy Policy explains how the mobile game <strong>Real Shot</strong> (the "Game") handles your
         information. The Game is published by <strong>Bornation</strong> ("we", "us"), based in Spain.
@@ -26,19 +26,22 @@
       <h2>1. The short version</h2>
       <ul>
         <li>We don't ask for your name, email, or any account. The Game has no login.</li>
-        <li>Your progress (XP, upgrades, settings) is saved <strong>only on your device</strong>. We never receive it.</li>
+        <li>Your progress (XP, gems, upgrades, settings) is saved <strong>only on your device</strong>. We never receive it.</li>
         <li>To improve the Game, we measure how it is played (levels, play time, ads shown, purchases) with
-          <strong>GameAnalytics</strong>, using a random player ID, not your identity.</li>
+          <strong>GameAnalytics</strong> and <strong>Google Analytics for Firebase</strong>, using random IDs, not your identity.</li>
+        <li>To know which of our own ads (for example on Google Ads) bring new players, Google Analytics for Firebase
+          measures installs, level progress, ad revenue and purchases. It uses your advertising ID for this
+          <strong>only if you accept personalized ads</strong>.</li>
         <li>The Game is free and shows ads. Our advertising partners (Unity and Google) collect some device data to show and
           measure ads. When you first open the Game, you choose whether ads can be <strong>personalized</strong>,
           and you can change this anytime in <strong>Settings</strong>.</li>
-        <li>You can buy "Remove Ads" in the Game. Payment is handled by Google Play or the Apple App Store; we never see your payment details.</li>
+        <li>You can buy "Remove Ads", gems and packs in the Game. Payment is handled by Google Play or the Apple App Store; we never see your payment details.</li>
         <li>We don't sell your personal information.</li>
       </ul>
 
       <h2>2. Information stored on your device</h2>
-      <p>The Game saves your game progress (XP, upgrades, tutorial status), your advertising choice and whether
-        you bought Remove Ads on your
+      <p>The Game saves your game progress (XP, gems, upgrades, tutorial status, daily rewards), your advertising
+        choice and whether you bought Remove Ads on your
         device. This data never leaves your device and is not sent to us (the gameplay statistics described in
         section 5 are separate). You can delete it at any time by
         uninstalling the Game or clearing its data in your phone's settings.</p>
@@ -66,9 +69,10 @@
         and <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">How Google uses information from apps that use its services</a>
         (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>).</p>
 
-      <h2>4. In-app purchase (Remove Ads)</h2>
-      <p>You can buy <strong>Remove Ads</strong> in the Game (Settings), which stops the ads shown between games.
-        Rewarded ads, which you choose to watch for a bonus, stay available.</p>
+      <h2>4. In-app purchases (Remove Ads, gems, Starter Pack)</h2>
+      <p>You can buy <strong>Remove Ads</strong> in the Game, which stops the ads shown between games.
+        Rewarded ads, which you choose to watch for a bonus, stay available. In the in-game Store you can also buy
+        <strong>gems</strong> (used to upgrade towers) and the <strong>Starter Pack</strong> (Remove Ads and gems).</p>
       <p>Payment is handled entirely by <strong>Google Play</strong> (Android) or the <strong>Apple App Store</strong>
         (iPhone). We never see your name, email or payment details. The store tells the Game only which product you
         own, with a purchase receipt. Your payment is processed under the
@@ -78,8 +82,9 @@
         This library may send technical information to Unity (such as device model, operating system, the
         product bought and whether the purchase succeeded) to operate and improve the service, as described in
         <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy" target="_blank" rel="noopener">Unity's privacy policy</a>.</p>
-      <p>Your purchase is saved on your device and linked to your Google account or Apple Account by the store, so
-        it comes back if you reinstall the Game. You can also tap <strong>Restore purchases</strong> in Settings.
+      <p>Your purchases are saved on your device and linked to your Google account or Apple Account by the store.
+        Remove Ads and the Starter Pack come back if you reinstall the Game; gems are saved on your device (on iPhone,
+        also in your device's keychain so they survive a reinstall). You can also tap <strong>Restore purchases</strong> in Settings.
         For refunds, see Google Play's or Apple's refund policy, or contact us.</p>
 
       <h2>5. Game analytics</h2>
@@ -104,10 +109,29 @@
         <a href="https://gameanalytics.com/trust/privacy-notice" target="_blank" rel="noopener">privacy notice</a>
         and <a href="https://www.gameanalytics.com/trust/data-retention-and-deletion-policy" target="_blank" rel="noopener">data retention policy</a>.</p>
 
+      <h3>Google Analytics for Firebase (measuring our ads)</h3>
+      <p>We advertise the Game (for example on Google Ads). To know which of our ads bring players who enjoy the Game,
+        the Game also uses <strong>Google Analytics for Firebase</strong>, operated by Google LLC and its affiliates
+        ("Google"), linked to our Google Ads account. It sends Google:</p>
+      <ul>
+        <li>a random app instance ID created when you first open the Game;</li>
+        <li>device information (model, operating system version, language, country derived from your IP address);</li>
+        <li>events: first opening of the Game, sessions, the levels you complete, the end of the tutorial;</li>
+        <li>the ads shown to you and the estimated revenue they earned us;</li>
+        <li>purchases made through Google Play or the App Store (product and price, never your payment details);</li>
+        <li>your device's advertising identifier, <strong>only if you accepted personalized ads</strong> (and on
+          iPhone, only if you also allowed tracking).</li>
+      </ul>
+      <p>If you decline personalized ads, the Game tells Google not to use this data for advertising (Google Consent
+        Mode: ad storage, ad user data and ad personalization denied); only anonymous usage statistics are sent.
+        Google processes this data under the
+        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a> and
+        <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">How Google uses information from apps that use its services</a>.</p>
+
       <h2>6. Your choice about personalized ads</h2>
       <p>The first time you open the Game, we ask whether you accept personalized ads. The Game shows ads either way:</p>
       <ul>
-        <li><strong>Accept</strong>: ads can be based on your interests, and your advertising ID is also used for game analytics (section 5).</li>
+        <li><strong>Accept</strong>: ads can be based on your interests, and your advertising ID is also used for game analytics and to measure our own ad campaigns (section 5).</li>
         <li><strong>No thanks</strong>: ads are not personalized. We also ask our partners not to sell or share your personal information.</li>
       </ul>
       <p>On iPhone, iOS then asks whether the Game may track you (App Tracking Transparency). If you don't allow it,
@@ -126,14 +150,19 @@
           <tr><td>Showing non-personalized ads, fraud prevention, ad measurement</td><td>Legitimate interest in funding a free game, and Unity's and Google's legitimate interests as described in their privacy policies</td></tr>
           <tr><td>Game analytics with a random player ID (section 5)</td><td>Our legitimate interest in understanding how the Game is played, fixing errors and measuring our marketing. You can object anytime by emailing us.</td></tr>
           <tr><td>Using your advertising ID for game analytics</td><td>Your consent (the personalized ads choice)</td></tr>
+          <tr><td>Measuring our ad campaigns with Google Analytics for Firebase and Google Ads (advertising ID, ad data)</td><td>Your consent (the personalized ads choice)</td></tr>
+          <tr><td>Anonymous usage statistics in Google Analytics for Firebase</td><td>Our legitimate interest in understanding how the Game is played. You can object anytime by emailing us.</td></tr>
           <tr><td>Saving your progress on your device</td><td>Necessary to provide the Game you requested</td></tr>
-          <tr><td>Processing and restoring your Remove Ads purchase</td><td>Necessary to perform the purchase contract</td></tr>
+          <tr><td>Processing your purchases and restoring Remove Ads / the Starter Pack</td><td>Necessary to perform the purchase contract</td></tr>
         </table>
       </div>
 
       <h2>8. Sharing and international transfers</h2>
       <p>We don't share your information with anyone other than Unity (ads and in-app purchase library),
-        GameAnalytics (game analytics, on our behalf) and Google Play or Apple (payments), as described above.
+        GameAnalytics (game analytics, on our behalf), Google (AdMob ads, Google Analytics for Firebase and Google Ads
+        for measuring our ad campaigns) and Google Play or Apple (payments), as described above.
+        Google may transfer data outside the European Economic Area, including to the United States, with appropriate
+        safeguards, as explained in the Google Privacy Policy.
         GameAnalytics may transfer data outside the European Economic Area with appropriate safeguards (such as the
         European Commission's Standard Contractual Clauses), as explained in its privacy notice.
         Unity may share ad-related data with advertisers and measurement partners, and may transfer it outside
@@ -143,7 +172,9 @@
       <h2>9. Data retention</h2>
       <p>Data saved on your device stays there until you uninstall the Game or clear its data. We keep no copy.
         Advertising data is kept by Unity according to its privacy policy. Game analytics data is kept by
-        GameAnalytics according to its data retention policy; we only look at it as aggregated reports.</p>
+        GameAnalytics according to its data retention policy; we only look at it as aggregated reports.
+        Google Analytics for Firebase data is kept by Google for the retention period set in our Google Analytics
+        property (event-level data: 2 months), then only as aggregated reports.</p>
 
       <h2>10. Children</h2>
       <p>The Game is not directed at children under 13 (or under 14 in Spain). We don't knowingly collect
@@ -157,7 +188,7 @@
       <ul>
         <li>For data saved in the Game: uninstall the Game or clear its data.</li>
         <li>For game analytics data: email us (see the <a href="delete-data.html">Delete Your Data</a> page). We
-          ask GameAnalytics to delete the data linked to your device.</li>
+          ask GameAnalytics and Google (Google Analytics for Firebase) to delete the data linked to your device.</li>
         <li>For advertising data: use the in-game setting above, reset your advertising ID, or contact Unity as
           described in <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy" target="_blank" rel="noopener">its privacy policy</a>.</li>
         <li>To have your data deleted, follow the steps on our <a href="delete-data.html">Delete Your Data</a> page.</li>
